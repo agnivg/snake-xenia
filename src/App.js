@@ -7,6 +7,7 @@ class App extends React.Component{
     this.state={
       snake:[[0,0],[2,0]],
       length:2,
+      score:0,
       food:{
         left:Math.floor((Math.random()*99)/2)*2,
         top:Math.floor((Math.random()*99)/2)*2},
@@ -140,6 +141,9 @@ class App extends React.Component{
   }
   checkifeat=()=>{
     const snak=[...this.state.snake];
+    let scor=this.state.score;
+    const lvl=this.state.level;
+    scor+=parseInt(lvl);
     const head=snak[snak.length-1];
     if(head[0]===this.state.food.left && head[1]===this.state.food.top){
       this.setState({
@@ -151,7 +155,8 @@ class App extends React.Component{
       snak.unshift([])
       this.setState({
         snake:snak,
-        length:snak.length
+        length:snak.length,
+        score:scor
       })
     }
   }
@@ -165,6 +170,7 @@ class App extends React.Component{
       direction:'RIGHT',
       snake:[[0,0],[2,0]],
       length:2,
+      score:0,
       over:false,
       food:{
         left:Math.floor((Math.random()*99)/2)*2,
@@ -185,7 +191,7 @@ class App extends React.Component{
           <h1 style={{color:'red',textAlign:'center'}}>Welcome to Snake Xenia</h1>
           <div style={{backgroundColor:'black'}}>
           <div className="area">
-            <h1 style={{textAlign:'center',padding:'15% 15% 2% 15%'}}>Game Over. Your Score is <span style={{color:'green'}}>{this.state.length-2}</span></h1>
+            <h1 style={{textAlign:'center',padding:'15% 15% 2% 15%'}}>Game Over. Your Score is <span style={{color:'green'}}>{this.state.score}</span></h1>
             <h4 style={{textAlign:'center',paddingBottom:'15%'}}>Note: To change level refresh page</h4>
             <button style={{margin:'0 40%',backgroundColor:'green',textAlign:'center',color:'white', width:'20%',height:'10%'}} onClick={this.resetall}>Replay</button>
           </div>
@@ -197,7 +203,7 @@ class App extends React.Component{
         return(
           <>
           <h1 style={{color:'red',textAlign:'center'}}>Welcome to Snake Xenia</h1>
-          <h2 style={{color:'green',textAlign:'center'}}>Score: <span style={{color:'red'}}>{this.state.length-2}</span> Level: <span style={{color:'red'}}>{this.state.level}</span></h2>
+          <h2 style={{color:'green',textAlign:'center'}}>Score: <span style={{color:'red'}}>{this.state.score}</span> Level: <span style={{color:'red'}}>{this.state.level}</span></h2>
           <div style={{backgroundColor:'black'}}>
           <div className="area">
             <div className="snake">
