@@ -1,0 +1,2 @@
+*{margin:0;padding:0}.area{position:relative;margin:20px auto;width:100vh;height:80vh;border:2px solid #000;background-color:#fff}.dot{background-color:#000;z-index:2}.dot,.food{position:absolute;width:2%;height:2%;border:1px solid #fff}.food{background-color:red;border-radius:100%;z-index:1}
+/*# sourceMappingURL=main.01b193c1.chunk.css.map */
