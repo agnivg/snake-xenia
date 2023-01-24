@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/snake-xenia/static/css/main.01b193c1.chunk.css",
-    "main.js": "/snake-xenia/static/js/main.d9164365.chunk.js",
-    "main.js.map": "/snake-xenia/static/js/main.d9164365.chunk.js.map",
+    "main.css": "/snake-xenia/static/css/main.f94ae06b.chunk.css",
+    "main.js": "/snake-xenia/static/js/main.84fb1c6b.chunk.js",
+    "main.js.map": "/snake-xenia/static/js/main.84fb1c6b.chunk.js.map",
     "runtime-main.js": "/snake-xenia/static/js/runtime-main.bfae8643.js",
     "runtime-main.js.map": "/snake-xenia/static/js/runtime-main.bfae8643.js.map",
     "static/js/2.245637e9.chunk.js": "/snake-xenia/static/js/2.245637e9.chunk.js",
     "static/js/2.245637e9.chunk.js.map": "/snake-xenia/static/js/2.245637e9.chunk.js.map",
     "index.html": "/snake-xenia/index.html",
-    "static/css/main.01b193c1.chunk.css.map": "/snake-xenia/static/css/main.01b193c1.chunk.css.map",
+    "static/css/main.f94ae06b.chunk.css.map": "/snake-xenia/static/css/main.f94ae06b.chunk.css.map",
     "static/js/2.245637e9.chunk.js.LICENSE.txt": "/snake-xenia/static/js/2.245637e9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bfae8643.js",
     "static/js/2.245637e9.chunk.js",
-    "static/css/main.01b193c1.chunk.css",
-    "static/js/main.d9164365.chunk.js"
+    "static/css/main.f94ae06b.chunk.css",
+    "static/js/main.84fb1c6b.chunk.js"
   ]
 }
